@@ -1,6 +1,15 @@
-function takeANumber(line, name) {
-  line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+var count = 0
+
+function takeANumber(line) {
+  count += 1
+  line.push(count)
+  /*if (line.length === 0) {
+    line.push(1)
+  } else {
+    line.push(line[-1]+1)
+  }
+  line.push(name);*/
+  return `Welcome. You are number ${count}.`
 }
 
 function nowServing(line) {
